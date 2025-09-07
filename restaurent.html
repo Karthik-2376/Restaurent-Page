@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            RESTAURENT
+        </title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-image: url(images/Background2.png);
+                color: white;
+                
+            }
+            .navbar{
+               display: flex;
+               height: 70px;
+               padding: 0px 100px 0px 50px;
+               align-items: center;
+               color: orange;
+               
+            }
+            .links{
+                display: flex;
+                list-style: none;
+                gap: 50px;
+                cursor: pointer;
+                margin-left: 150px;
+            }
+            .logo{
+                font-size: 70px;
+            }
+            .hero{
+                display: flex;
+            }
+            .left{
+                display: flex;
+                flex-direction: column;
+                padding-left: 240px;
+                align-items: start;
+                padding-top: 180px;
+            }
+            .left1{
+                font-size: 30px;
+                font-style: italic;
+            }
+            .left2{
+                margin-top: 0px;
+                padding: 0px;
+                font-size: 80px;
+            }
+            .left3{
+                font-size: 25px;
+                font-style: italic;
+                margin-bottom: 15px;
+            }
+            .left4{
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 50px;
+                text-align: center;
+                padding: 5px 15px;
+                cursor: pointer;
+            }
+            .left5{
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 50px;
+                text-align: center;
+                padding: 5px 15px;
+                cursor: pointer;
+                position: relative;
+                top: 20px;
+
+            }
+            #food{
+                background: url(images/food.png);
+                width: 500px;
+                height: 500px;
+                background-size: cover;
+                position: relative;
+                top: -290px;
+                left: -200px;
+                float: right;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+            img{
+                width: 110px;
+                object-fit: cover;
+                position:relative ;
+                bottom: -330px;
+                left: -680px;
+                padding: 1px;
+                border: 2px solid white;
+                border-radius: 50%;
+                cursor: pointer;
+            
+            }
+            .left4:hover{
+                color: bisque;
+            }
+             .left5:hover{
+                color: bisque;
+            }
+            .links li:hover{
+                color: burlywood;
+            }
+            img:hover{
+                color: chocolate;
+            }
+            .items{
+                background-color: aliceblue;
+                color: black;
+                width: 500px;
+                height: 400px;
+                margin-left: 550px;
+                margin-bottom: 200px ;
+                position: relative;
+                top: -220px;
+                text-align: center;
+                border-radius: 20px;
+                display: none;
+                justify-content: space-between;
+                
+            }.items ul {
+                list-style: decimal;
+                padding: 20px;
+                margin: 0;
+            }
+
+             .items li {
+                display: flex;
+               justify-content: space-between;
+               font-size: 18px;
+               padding: 5px 20px;
+               border-bottom: 1px solid #ccc;
+             }
+            .items li:last-child {
+                 border-bottom: none;
+            }
+
+            .a1{
+                padding-top: 30px;
+            }
+            .main{
+                opacity: 1;
+            }
+            .a3{
+                position: relative;
+                left: 160px;
+                top: 180px;
+                color: orange;
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-style: italic;
+            }
+            .a4{
+                position: relative;
+                left: 206px;
+                top: 153px;
+                color: orange;
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-style: italic;
+            }
+            .a5{
+                position: relative;
+                left: 400px;
+                top: 100px;
+                color: orange;
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-style: italic;
+            }
+            .a6{
+                position: relative;
+                left: 470px;
+                top: 76px;
+                color: orange;
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-style: italic;
+            }
+            .MENU{
+                padding-top: 20px;
+            }
+            .about-content{
+                position: relative;
+                left: 150px;
+                top: 80px;
+                color: darkgray;
+            }
+            .about-highlights{
+                position: relative;
+                right: 25px;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            .us{
+                color: orange;
+                text-decoration: none;
+            }
+            .location-content{
+                position: relative;
+                left: 150px;
+                top: 90px;
+                bottom: 50px;
+            
+            }
+            .contact-section{
+               position: relative;
+               left: 150px;
+               margin-top: 100px;
+            }
+            .order{
+               text-decoration: none;
+               color: white;
+            }
+            .about-content,
+            .location-content,
+            .contact-section {
+                max-width: 800px;    
+                margin-left: -20px;   
+                padding: 20px;
+                color: darkgray;  
+            }  
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">BiteBuzz</div>
+                <ul class="links">
+                    <li class="home">Home</li>
+                    <li class="a2">Menu</li>
+                    <li ><a href="#about" class="us">About</a></li>
+                    <li ><a href="#location" class="us">Location</a></li>
+                    <li ><a href="#contact" class="us">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hero">
+                <div class="left">
+                    <span class="left1">Are You Hungry?</span>
+                    <span class="left2">Don't Wait</span>
+                    <span class="left3">Let start to order food</span>
+                    <span class="left4">Check out Menu</span>
+                     <span class="left5"><a href="contactus.html" class="order" target="_blank">Order Now!</a></span>
+                </div>
+            </div>
+            <div class="food" id="food">
+                <img src="images/food1.png" alt="" id="food1">
+                <img src="images/food2.png" alt="" id="food2">
+                <img src="images/food3.png" alt="" id="food3">
+                <img src="images/food4.png" alt="" id="food4">
+            
+                
+            </div>
+            </div>
+           <div class="items"> 
+    <h3 class="MENU">MENU</h3>
+    <ul class="a1">
+        <li><span>Pizza</span>  <span><b>₹399/-</b></span></li>
+        <li><span>Biryani</span>  <span><b>₹399/-</b></span></li>
+        <li><span>Roti</span>  <span><b>₹49/-</b></span></li>
+        <li><span>Roll</span>  <span><b>₹99/-</b></span></li>
+        <li><span>Water Bottle</span>  <span><b>₹39/-</b></span></li>
+        <li><span>Grilled Steak</span>  <span><b>₹699/-</b></span></li>
+        <li><span>Honkong Noodles</span>  <span><b>₹399/-</b></span></li>
+        <li><span>Grilled Salmon Salad</span>  <span><b>₹499/-</b></span></li>
+    </ul>
+</div>
+            <div>
+                    <span class="a3">Grilled <br>Salmon</span>
+                     <span class="a4">Honkong <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noodles<br></span>
+                     <span class="a5">Roasted <br>
+                        Stake
+                     </span>
+                     <span class="a6">Grilled <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stake</span>
+            </div>
+            <section id="about" class="about-section">
+  <div class="about-content" id="about">
+    <h2 >About Us</h2>
+    <p>
+      Welcome to <strong>BiteBuzz</strong>, your go-to spot for fresh, 
+      delicious, and affordable meals. Our mission is simple <br> – 
+      to bring you food  that not only satisfies your hunger but also 
+      fits perfectly into your student lifestyle.
+    </p>
+    <p>
+      From cheesy pizzas to healthy salads, every dish is made with 
+      love, quality ingredients, and a promise of great taste. <br>
+      Whether you’re grabbing a quick lunch between classes or 
+      enjoying dinner with friends, we’ve got something for everyone.
+    </p>
+    <ul class="about-highlights">
+      <li>✔ Fresh & Healthy Ingredients</li>
+      <li>✔ Affordable Prices</li>
+      <li>✔ Quick Delivery & Takeaway</li>
+      <li>✔ Perfect Hangout Spot</li>
+    </ul>
+   </div>
+   </section>
+   <section id="location" class="location-section">
+   <div class="location-content">
+    <h2>Our Location</h2>
+    <p>
+      You can find us right in the heart of the city, 
+      easily accessible from your college campus.
+    </p>
+    <p><strong>📍 Address:</strong> CollegeResto, Sector-1, Rourkela, India</p>
+   </div>
+   </section>
+    <section id="contact" class="contact-section">
+    <div class="contact-content">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out for orders, feedback, or queries.</p>
+    <p><strong>📞 Phone:</strong> +91 99999 88888</p>
+    <p><strong>✉ Email:</strong> collegeresto@gmail.com</p>
+  </div>
+</section>
+
+        <script>
+            let main = document.querySelector(".main");
+            let food = document.getElementById("food");
+            let food1 = document.getElementById("food1");
+            let food2 = document.getElementById("food2");
+            let food3 = document.getElementById("food3");
+            let food4 = document.getElementById("food4");
+            let menu = document.getElementsByClassName("left4")[0];
+            let items = document.querySelector(".items");
+            let a2 = document.getElementsByClassName("a2")[0];
+            let navbar = document.getElementsByClassName("navbar");
+            let logo = document.getElementsByClassName("logo");
+            let links = document.getElementsByClassName("links");
+            let home = document.querySelector(".home");
+            
+
+            food1.addEventListener('click',()=>{food.style.backgroundImage="url('images/food1.png')";});
+            food2.addEventListener('click',()=>{food.style.backgroundImage="url('images/food2.png')";});
+            food3.addEventListener('click',()=>{food.style.backgroundImage="url('images/food3.png')";});
+            food4.addEventListener('click',()=>{food.style.backgroundImage="url('images/food4.png')";});
+            menu.addEventListener('click',()=>{
+               if(items.style.display === "block"){
+                 items.style.display = "none";
+                  main.style.opacity = "1"; 
+                  } 
+                  else {
+                    items.style.display = "block";
+                      main.style.opacity = "0.4";
+                 }});
+
+                a2.addEventListener('click',()=>{
+                  if(items.style.display === "block"){
+                      items.style.display = "none";
+                        main.style.opacity = "1"; 
+                    }
+                     else {
+                       items.style.display = "block";
+                        main.style.opacity = "0.4";
+                 }});
+                home.addEventListener('click',()=>{items.style.display = "none"; main.style.opacity = "1";});
+
+                window.onload = function() {
+                 window.scrollTo(0, 0);
+                 if (window.location.hash) {
+                 history.replaceState(null, null, window.location.pathname);
+                  }
+                 };
+        </script>
+    </body>
+</html>
